@@ -1,5 +1,7 @@
 # Comp-gLASSO-JASA
 
+## Introduction
+
 This paper analyzes both simulated and real data.
 
 The simulated data are generated with random number seed.
