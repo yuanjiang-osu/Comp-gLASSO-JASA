@@ -1,6 +1,6 @@
 # Comp-gLASSO-JASA
 
-## Introduction
+## INTRODUCTION
 
 This paper analyzes both simulated and real data.
 
@@ -22,11 +22,11 @@ The second real dataset is the OTU abundance data from the OSU Zebrafish Project
 
 The code aggregates the OTU abudance data (asv.tab) into genus abundance data based on the taxonomic information (tax.tab) and estimates the genus interaction networks separately for uninfected and infected zebrafish based on their parasite burden.
 
-## Instructions
+## INSTRUCTIONS
 
 Set the R working directory to the main folder and run the R wrapper file "Wrapper.R" to reproduce all figures and tables in the manuscript. Below are additional details.
 
-### SIMULATION
+### Simulation
 
 To reproduce Figures 1-2 in Section 3.2, run the following R scripts:
 
@@ -42,7 +42,7 @@ setwd("./Simulation")
 source("Simulation_Sparse.R")
 ```
 
-### REAL DATA/TARA
+### Real data/TARA
 
 Run the following R scripts:
 
@@ -65,7 +65,7 @@ source("TARA_StARS.R")
 source("TARA_table_plot_StARS.R")
 ```
 
-### REAL DATA/Zebrafish
+### Real data/Zebrafish
 
 Run the following R scripts:
 
