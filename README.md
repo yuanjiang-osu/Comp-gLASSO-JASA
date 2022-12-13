@@ -26,7 +26,7 @@ The code aggregates the OTU abudance data (asv.tab) into genus abundance data ba
 
 Set the R working directory to the main folder and run the R wrapper file "Wrapper.R" to reproduce all figures and tables in the manuscript. Below are additional details.
 
-SIMULATION
+### SIMULATION
 
 To reproduce Figures 1-2 in Section 3.2, run the following R scripts:
 
@@ -42,7 +42,7 @@ setwd("./Simulation")
 source("Simulation_Sparse.R")
 ```
 
-REAL DATA/TARA
+### REAL DATA/TARA
 
 Run the following R scripts:
 
@@ -65,7 +65,7 @@ source("TARA_StARS.R")
 source("TARA_table_plot_StARS.R")
 ```
 
-REAL DATA/Zebrafish
+### REAL DATA/Zebrafish
 
 Run the following R scripts:
 
