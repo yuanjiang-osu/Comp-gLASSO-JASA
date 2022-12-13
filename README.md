@@ -19,3 +19,60 @@ tax.tab: taxonomic hierarchy for each OTU
 metadata.tab: meta data for samples (zebrafish)
 
 The code aggregates the OTU abudance data (asv.tab) into genus abundance data based on the taxonomic information (tax.tab) and estimates the genus interaction networks separately for uninfected and infected zebrafish based on their parasite burden.
+
+# Instructions
+
+Set the R working directory to the main folder and run the R wrapper file "Wrapper.R" to reproduce all figures and tables in the manuscript. Below are additional details.
+
+SIMULATION
+
+To reproduce Figures 1-2 in Section 3.2, run the following R scripts:
+
+\begin{verbatim}
+setwd("./Simulation")
+source("Simulation_Dense.R")
+\end{verbatim}
+
+To reproduce Figures S1-S2 in the supplementary materials, run the following R scripts:
+
+\begin{verbatim}
+setwd("./Simulation")
+source("Simulation_Sparse.R")
+\end{verbatim}
+
+REAL DATA/TARA
+
+Run the following R scripts:
+
+\begin{verbatim}
+setwd("./TARA")
+source("data_preprocessing.R")
+source("TARA_path.R")
+\end{verbatim}
+
+To produce Figure 3(a) in Section 4.1, run the following R scripts:
+\begin{verbatim}
+source("TARA_table_plot_path.R")
+\end{verbatim}
+
+To produce Figure 3(b) in Section 4.1 and Figure S3 in the supplementary materials, as well as Table 1 in Section 4.1 and Table S1 in the supplementary materials, run the following R scripts:
+
+\begin{verbatim}
+source("TARA_StARS.R")
+source("TARA_table_plot_StARS.R")
+\end{verbatim}
+
+REAL DATA/Zebrafish
+
+Run the following R scripts:
+
+\begin{verbatim}
+setwd("./Zebrafish")
+source("data_preprocessing.R")
+source("fish_StARS.R")
+\end{verbatim}
+
+To produce Figures 4-5 in Section 4.2 and Table S2 in the supplementary materials, run the following R scripts:
+\begin{verbatim}
+source("fish_table_plot_StARS.R")
+\end{verbatim}
