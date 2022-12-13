@@ -30,39 +30,53 @@ SIMULATION
 
 To reproduce Figures 1-2 in Section 3.2, run the following R scripts:
 
+```{r setup, message=FALSE}
 setwd("./Simulation")
 source("Simulation_Dense.R")
+```
 
 To reproduce Figures S1-S2 in the supplementary materials, run the following R scripts:
 
+```{r setup, message=FALSE}
 setwd("./Simulation")
 source("Simulation_Sparse.R")
+```
 
 REAL DATA/TARA
 
 Run the following R scripts:
 
+```{r setup, message=FALSE}
 setwd("./TARA")
 source("data_preprocessing.R")
 source("TARA_path.R")
+```
 
 To produce Figure 3(a) in Section 4.1, run the following R scripts:
 
+```{r setup, message=FALSE}
 source("TARA_table_plot_path.R")
+```
 
 To produce Figure 3(b) in Section 4.1 and Figure S3 in the supplementary materials, as well as Table 1 in Section 4.1 and Table S1 in the supplementary materials, run the following R scripts:
 
+```{r setup, message=FALSE}
 source("TARA_StARS.R")
 source("TARA_table_plot_StARS.R")
+```
 
 REAL DATA/Zebrafish
 
 Run the following R scripts:
 
+```{r setup, message=FALSE}
 setwd("./Zebrafish")
 source("data_preprocessing.R")
 source("fish_StARS.R")
+```
 
 To produce Figures 4-5 in Section 4.2 and Table S2 in the supplementary materials, run the following R scripts:
 
+```{r setup, message=FALSE}
 source("fish_table_plot_StARS.R")
+```
